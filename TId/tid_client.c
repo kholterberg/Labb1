@@ -27,7 +27,7 @@ int main() {
     //127.0.0.1 - localhost
     serveraddress.sin_addr.s_addr = inet_addr("127.0.0.1");
 
-    sendto(clientsocket, "", 0, 0, (struct sockaddr *)&serveraddress, sizeof(serveraddress));
+    sendto(clientsocket, NULL, 0, 0, (struct sockaddr *)&serveraddress, sizeof(serveraddress));
     printf("req skickat till server\n");
 
     socklen_t server_length = sizeof(serveraddress);

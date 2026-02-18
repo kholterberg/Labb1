@@ -8,3 +8,9 @@ Detta är en tidsserver och en klient skriven i C som använder Berkeley Sockets
 * Beräknar tidsskillnaden melllan RFC 868 och Unix tid som började jan 1 1970.
 * Ser till att skickad data är i big endian med hjälp av htonl, Host To Network Long, och att när klienten tar emot datan ordnas det efter klienten med hjälp av ntohl, Network To Host Long.
 * Med RFC 868 skickas tiden i 32 bits format, för att vara förståeligt för en mänsch används funktionen ctime för att översätta det till ett mer läsligt datum.
+
+## Kompilering
+Kompilera koden med GCC via terminalen:
+
+gcc tid_server.c -o tid_server
+gcc tid_client.c -o tid_client

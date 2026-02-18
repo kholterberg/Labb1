@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
-#define PORT 8787
+#define PORT 8080
 #define BUFFERSIZE 4096
 
 const char *get_mime_type(const char *filename) { //funktion för att hitta filtyper
